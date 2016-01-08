@@ -4,13 +4,13 @@ var attackVectorFiles = [
   '../fuzzdb-master/attack/xss/xss-rsnake.fuzz.txt',
   '../fuzzdb-master/attack/sql-injection/detect/xplatform.fuzz.txt'
 ]
-var attackVectors = [''];
 
 exports.config = {
 //The address of a running selenium server.
  seleniumAddress: 'http://localhost:4444/wd/hub',
  framework: 'jasmine2', 
   onPrepare: function() {
+    var attackVectors = [];
     for (f of attackVectorFiles) {
       fs.readFile(f, 'utf8', function (err, data) {
         if (err) {      
@@ -39,16 +39,12 @@ exports.config = {
     }));
   },
 
- //Here we specify the name of the specs files.
-  suites: {
-  	healthcheck: 'spec.js',
+  suites: {  	
     current: 'spec.js'
   },
   
   jasmineNodeOpts: {
-  	showColors: true,
-  	//realtimeFailure: true,
-    //isVerbose: false
+  	showColors: true, 
   }
 	
 };

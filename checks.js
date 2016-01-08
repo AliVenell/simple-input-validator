@@ -1,6 +1,6 @@
 module.exports = {
 	checkLength: function (vector, fieldLength) {
-		return (vector.length<=fieldLength);
+		return (vector.length <= fieldLength);
 	},
 
 	checkLegalCharacters: function (vector, pattern) {
@@ -13,8 +13,8 @@ module.exports = {
 	},
 
 	checkVector: function (vector, fieldLength, pattern) {
-		if (this.checkLength(vector, fieldLength)===false) { return false; }
-		if (this.checkLegalCharacters(vector, pattern)===false) { return false; }
+		if (this.checkLength(vector, fieldLength) === false) { return false; }
+		if (this.checkLegalCharacters(vector, pattern) === false) { return false; }
 		return true;
 	}
 };
