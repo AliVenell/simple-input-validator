@@ -4,11 +4,8 @@ Simple input validator is a protractor test automation tool that uses FuzzDB's i
 
 # Installation #
 
-- Install Protractor (e.g. npm install -g protractor)
+- Install everything by typing: npm install
 - Install FuzzDB (git clone git@github.com:fuzzdb-project/fuzzdb.git fuzzdb)
-- Install Protractor reporters. 
- 1. npm install jasmine-reporters
- 2. npm install protractor-jasmine2-screenshot-reporter --save-dev
 
 # Writing Tests #
 

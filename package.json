@@ -1,0 +1,28 @@
+{
+  "name": "simple-input-validator",
+  "version": "1.0.0",
+  "description": "Simple input validator with Protractor and FuzzDB",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "protractor conf.js"
+  },
+  "dependencies" : { 
+    "jasmine-reporters" : "*",
+    "protractor-jasmine2-screenshot-reporter": "*" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliVenell/simple-input-validator.git"
+  },
+  "keywords": [
+    "Protractor",
+    "FuzzDB"
+  ],
+  "author": "Martti Venell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliVenell/simple-input-validator/issues"
+  },
+  "homepage": "https://github.com/AliVenell/simple-input-validator#readme"
+}
